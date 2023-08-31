@@ -29,14 +29,14 @@ The training of the neural network has 7 key steps:
 * Calculate the deltas of the hidden layer
 * Adjust the weights and bias of the hidden layer
 
-The formula for calculating the weights and deltas of the output layer is:    
+The formula for calculating the deltas of the connections from the hidden to output layer is:    
 *&delta;W<sub>ij</sub><sup>HO</sup> = (lr * E * (O * (1-O))) . H<sup>T</sup>*   
 
-The formula for calculating the weights and deltas of the hidden layer is:   
+The formula for calculating the deltas of the connections from the input to hidden layer is:   
 *&delta;W<sub>ij</sub><sup>IH</sup> = (lr * HE * (H * (1-H))) . I<sup>T</sup>*     
 
 *&delta;W<sub>ij</sub><sup>HO</sup> is the change in the weights of the connections from the hidden to output layer*     
-*&delta;W<sub>ij</sub><sup>IH</sup> us tge change in the weights of the connections from the input to the hidden layer*   
+*&delta;W<sub>ij</sub><sup>IH</sup> is the change in the weights of the connections from the input to the hidden layer*   
 *lr is the learning rate*   
 *E is the errors of the output layer*   
 *HE is the errors of the hidden layer*    
