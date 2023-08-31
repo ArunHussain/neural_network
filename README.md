@@ -9,7 +9,7 @@ The issue with a perceptron is can it only solve linearly separable problems. He
 
 
 ## **Three layer neural network**
-The neural network implementation has a input, hidden and output layer and is fully connected. The output of the neural network is computed by a feed forward algorithm which first computes the output of the hidden layer and then using that, computes the output of the output layer. The formula is as follows:    
+The neural network implementation has a input, hidden and output layer and is fully connected. The output of the neural network is computed by a feed forward algorithm which first computes the output of the hidden layer and then using that, computes the output of the output layer. The formula of the algorithm is as follows:    
 
 *H = &sigma;(W<sub>ij</sub> * I + B<sub>HL</sub>)*    
 *O =  &sigma;(W<sub>ij</sub> * H + B<sub>OL</sub>)*     
