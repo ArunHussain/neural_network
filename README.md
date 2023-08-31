@@ -11,14 +11,14 @@ The issue with a perceptron is can it only solve linearly separable problems. He
 ## **Three layer neural network**
 The neural network implementation has a input, hidden and output layer and is fully connected. The output of the neural network is computed by a feed forward algorithm which first computes the output of the hidden layer and then using that, computes the output of the output layer. The formula of the algorithm is as follows:    
 
-*H = &sigma;(W<sub>ij</sub> * I + B<sub>HL</sub>)*    
-*O =  &sigma;(W<sub>ij</sub> * H + B<sub>OL</sub>)*     
-*&sigma; is the activation function*
-*H is the output of the hidden layer*  
-*O is the output of the output layer*    
-*W<sub>ij</sub> is the matrix of all weights in the network*     
+*H = &sigma;(W<sub>ij</sub> * I + B<sub>HL</sub>)*     
+*O =  &sigma;(W<sub>ij</sub> * H + B<sub>OL</sub>)*      
+*&sigma; is the activation function*    
+*H is the output of the hidden layer*    
+*O is the output of the output layer*     
+*W<sub>ij</sub> is the matrix of all weights in the network*      
 *I is the inputs*    
-*B<sub>HL</sub> is the bias of the hidden layer and B<sub>OL</sub> is the bias of the output layer*    
+*B<sub>HL</sub> is the bias of the hidden layer and B<sub>OL</sub> is the bias of the output layer*       
 
 The training of the neural network has 7 key steps:
 * Perform the feed forward algorithm
@@ -30,10 +30,10 @@ The training of the neural network has 7 key steps:
 * Adjust the weights and bias of the hidden layer
 
 The formula for calculating the weights and deltas of the output layer is:    
-*&delta;W<sub>ij</sub><sup>HO</sup> = (lr * E * (O * (1-O))) . H<sup>T</sup>*
+*&delta;W<sub>ij</sub><sup>HO</sup> = (lr * E * (O * (1-O))) . H<sup>T</sup>*   
 
 The formula for calculating the weights and deltas of the hidden layer is:   
-*&delta;W<sub>ij</sub><sup>IH</sup> = (lr * HE * (H * (1-H))) . I<sup>T</sup>*   
+*&delta;W<sub>ij</sub><sup>IH</sup> = (lr * HE * (H * (1-H))) . I<sup>T</sup>*     
 
 *&delta;W<sub>ij</sub><sup>HO</sup> is the change in the weights of the connections from the hidden to output layer*     
 *&delta;W<sub>ij</sub><sup>IH</sup> us tge change in the weights of the connections from the input to the hidden layer*   
