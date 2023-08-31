@@ -20,3 +20,11 @@ The neural network implementation has a input, hidden and output layer and is fu
 *I is the inputs*    
 *B<sub>HL</sub> is the bias of the hidden layer and B<sub>OL</sub> is the bias of the output layer*    
 
+The training of the neural network has 7 key steps:
+* Perform the feed forward algorithm
+* Calculate the gradients of the output layer
+* Calculate the deltas of the output layer
+* Adjust the weights and bias of the output layer
+* Calculate the gradients of the hidden layer
+* Calcualte the deltas of the hidden layer
+* Adjust the weights and bias of the hidden layer
