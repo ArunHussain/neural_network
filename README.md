@@ -24,16 +24,18 @@ The training of the neural network has 7 key steps:
 * Perform the feed forward algorithm
 * Calculate the gradients of the output layer
 * Calculate the deltas of the output layer
-* Adjust the weights and bias of the output layer
+* Adjust the weights and bias of the output layer by the deltas and gradients repectively
 * Calculate the gradients of the hidden layer
 * Calculate the deltas of the hidden layer
-* Adjust the weights and bias of the hidden layer
+* Adjust the weights and bias of the hidden layer by the deltas and gradients respectively
 
 The formula for calculating the deltas of the connections from the hidden to output layer is:    
 *&delta;W<sub>ij</sub><sup>HO</sup> = (lr * E * (O * (1-O))) . H<sup>T</sup>*   
+*(lr * E * (O * (1-O))) is the gradient*
 
 The formula for calculating the deltas of the connections from the input to hidden layer is:   
-*&delta;W<sub>ij</sub><sup>IH</sup> = (lr * HE * (H * (1-H))) . I<sup>T</sup>*     
+*&delta;W<sub>ij</sub><sup>IH</sup> = (lr * HE * (H * (1-H))) . I<sup>T</sup>*   
+*(lr * HE * (H * (1-H))) is the gradent*   
 
 *&delta;W<sub>ij</sub><sup>HO</sup> is the change in the weights of the connections from the hidden to output layer*     
 *&delta;W<sub>ij</sub><sup>IH</sup> is the change in the weights of the connections from the input to the hidden layer*   
