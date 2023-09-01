@@ -25,7 +25,7 @@ The training of the neural network has 7 key steps:
 * Calculate the gradients of the hidden to output connections   
 * Calculate the deltas of the hiddent to output connections    
 * Adjust the weights and bias of the output layer by the deltas and gradients repectively
-* Calculate the gradients of the input to hidden connections    
+* Calculate the gradients of the input to hidden connections   
 * Calculate the deltas of the input to hidden connections   
 * Adjust the weights and bias of the hidden layer by the deltas and gradients respectively
 
