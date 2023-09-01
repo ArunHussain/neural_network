@@ -45,7 +45,7 @@ The formula for calculating the deltas of the connections from the input to hidd
 *O is the outputs of the output layer*     
 *H is the outputs of the hidden layer*   
 *H<sup>T</sup> is the transpose of H*    
-*I<sup>T</sup> is the transpose of the inputs to the input layer*
-*\* is the Hadamard product (i.e the element wise multiplication)*
+*I<sup>T</sup> is the transpose of the inputs to the input layer*    
+*\* is the Hadamard product (i.e the element wise multiplication)*   
 *. is the matrix product*
 
